@@ -34,7 +34,6 @@ chown -R jenkins:jenkins /var/lib/jenkins/.ssh/
 chmod 700 /var/lib/jenkins/.ssh/
 chmod 600 /var/lib/jenkins/.ssh/id_ed25519
 chmod 644 /var/lib/jenkins/.ssh/id_ed25519.pub
-snap install docker
 apt install docker.io -y
 #echo "hello"
 sudo -u jenkins ssh-keyscan -t ed25519 github.com >> /var/lib/jenkins/.ssh/known_hosts
